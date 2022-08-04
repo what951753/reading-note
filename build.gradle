@@ -16,11 +16,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
-
+apply plugin: 'application'
 
 jar {
 	manifest {
-		attributes 'Main-Class': 'com.example.restservice.RestServiceApplication'
+		attributes 'Main-Class': 'com.example.restservice.Application'
 
 	}
 }
